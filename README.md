@@ -1,5 +1,51 @@
 # Day6map
 
+##   1. Create new project
+
+```bash
+ng new day6map
+```
+##   2. Create GitHub Repo
+
+```bash
+git init
+
+git remote add origin https://github.com/dvameka/day6map.git
+
+git push -u origin master
+```
+## Install Material/CDK/Animations
+```bash
+ng add @angular/material
+```
+Check that @angular folder has cdk, animations
+
+## Install hammerjs
+```bash
+npm install --save hammerjs
+```
+
+## Import hammerjs to main.ts
+
+```ts
+import 'hammerjs';
+```
+## Install Flex-Layout
+
+```bash
+npm install --save @angular/flex-layout
+```
+## Create Component City Name Input
+
+```bash
+ng g c components/city-nameinput --spec false --flat
+```
+## Create Components Weather Output
+
+```bash
+ng g c components/weather-output --spec false --flat
+```
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.5.
 
 ## Development server
