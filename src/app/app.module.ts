@@ -9,6 +9,7 @@ import { MaterialModule } from './material.module';
 
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { WeatherService } from './environment/weather.service';
 
 
 
@@ -24,7 +25,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     BrowserAnimationsModule, HttpClientModule, FormsModule, ReactiveFormsModule,
     MaterialModule
   ],
-  providers: [],
+  providers: [ WeatherService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
