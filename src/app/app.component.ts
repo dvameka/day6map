@@ -1,18 +1,18 @@
-import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { Component , OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import {debounceTime, distinctUntilChanged} from 'rxjs/operators';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'day6map';
+export class AppComponent implements OnInit {
+ /*
+  (F-32)*5/9 = Celcius
+  */
+ title = 'day6map';
 
-  searchForm  = new FormGroup(
-    {
-      term: new FormControl(''),
-    }
-  );
+ngOnInit () { }
+  constructor( ) { }
 }

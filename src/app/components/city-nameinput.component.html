@@ -1,3 +1,23 @@
-<p>
-  city-nameinput works!
-</p>
+<form [formGroup]="searchform" class="example-form">
+  <mat-card>
+     
+        <mat-toolbar color="primary">
+          <mat-toolbar-row>
+            <img src="assets/weathermap.png" width="50" hspace="10"><span>Weather Map</span> 
+          </mat-toolbar-row>
+        </mat-toolbar>
+  
+        <mat-form-field style="width:400px !important">
+          <input formControlName="city" type="text" placeholder="Enter City Name" matInput maxlength="50" required>
+        </mat-form-field>
+        <br>
+   
+   
+
+    <p>Temperature: {{result.temp}} F </p>
+    <p>Humidity: {{result.humidity}} F </p>
+    <p>Min Temperature: {{result.temp_min}} F </p>
+    <p>Max Temperature: {{result.temp_max}} F </p>
+
+  </mat-card>
+</form>
